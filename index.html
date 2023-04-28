@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+      <title>Deepak's Website</title>
+      <!-- <author>Deepak Ragu</author> --> 
+      <meta name="author" content="Deepak Ragu">
+    </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#about-section">About me</a></li>
+        <li><a href="#work-section">Work</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Welcome to My Personal Website</h1>
+    </header>
+    <main>
+      <section id="about-section">
+        <h2>About Me</h2>
+        <p>Hi there! My name is Deepak Ragu</p>
+        <h3>Background</h3>
+        <h4>
+        <ul>
+            <li><h5>Senior at UC Berkeley</h5> <h6>2019-2023</h6></li>
+            <li><h5>Double Major</h5><h6>Computer Science and Political Science</h6></li>
+            <li><h5>Incoming SWE @ Google</h5> <h6>Prev SWE @ Amazon</h6></li>
+          </ul>
+        </h4>
+        <p>I enjoy reading, building with legos, card/board games, and spending time with friends.</p>
+        <p>I'm passionate about the intersection of tech and law, especially related to language models and NLP.</p>
+      </section>
+      <section id="work-section" class="work">
+        <h2>My Work</h2>
+        <div>
+          <h3>Project 1</h3>
+          <img src="./email-marketing-spam-folder-88fcca5f.webp" alt="Project 1" class="proj">
+          <p>Logistic regression model to classify spam emails (90% accuracy), used NLTK, SKLearn, Seaborn</p>
+        </div>
+        <div>
+          <h3>Project 2</h3>
+          <img src="./Git-Icon-1788C.png" alt="Project 2" class="proj">
+          <p>Miniature source-control system based on Git coded in Java, manages local/remote file system</p>
+        </div>
+        <div>
+            <h3>Project 3</h3>
+            <img src="./im3.png" alt="Project 3" class="proj">
+            <p>Simple Python API that outputs similarity of two images using OpenCV, 95% accuracy</p>
+          </div>
+      </section>
+      <section id="contact-section">
+        <h2>Contact Me</h2>
+        <p>You can find me on the following social media platforms:</p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/deepak-ragu" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/deepakragu" target="_blank">GitHub</a></li>
+        </ul>
+        <p>You can also email me at <a href="mailto:deepak.ragu@berkeley.edu">deepak.ragu@berkeley.edu</a>.</p>
+      </section>
+    </main>
+    <form>
+      <label for="input">Secret Password:</label>
+      <input type="text" id="input">
+      <button type="submit" onclick="checkName(event)">Submit</button>
+    </form>
+    <script>
+      function checkName(event) {
+        console.log("here1");
+        event.preventDefault();
+        const nameInput = document.getElementById('input');
+        console.log("here2");
+        if (nameInput.value.toLowerCase() === 'richard west') {
+          console.log("here3");
+          window.open('https://zaqqazzaq.github.io/', '_blank');
+          console.log("here4");
+        }
+      }
+      </script>
+  </body>
+</html>
